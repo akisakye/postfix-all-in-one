@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "This script will install postfix one in all. It's as is where is"
+echo "This script will one day install postfix and all the cool beans that make a mail server. As is where is"
 echo "Continue?"
 read continue_install
 if [ $continue_install = 'y' ]
@@ -15,9 +15,8 @@ read postfix_install
 echo "Do you want to install Dovecot"
 read dovecot_install
 
+#Will eventually have to generate a strong passwd here and other parts passwds are used. Use at your own peril
 mypass="123123321321"
-
-
 
 apt-get update -y
 export DEBIAN_FRONTEND=noninteractive
